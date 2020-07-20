@@ -12,12 +12,15 @@ Red #C32026 rgb(195,32,38)
 body {
     display:grid;
     height:100%;
-    grid-template-rows:200px 1fr 60px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows:200px 3fr 3fr 1fr 1fr 60px;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "logo logo"
-    "timer tables"
-    "footer footer";
+    "logo"
+	"timer"
+    "tables"
+	"points"
+	"formula"
+    "footer";
 }
 
 #SPClogo
@@ -31,22 +34,26 @@ body {
 {
     grid-area:footer;
     padding:15px 40px 15px 0px;
-    text-align:right;
+    text-align:center;
     background-color:#C32026;
+}
+
+.footer a {
+	text-decoration:none;
+	font-family: 'PT Sans', sans-serif;
+	color:black;
 }
 
 .table-container{
     grid-area:tables;
-    padding-right:50px;
-    padding-bottom:50px;
     /* font-family: 'Luckiest Guy', sans-serif; */
     font-family: 'PT Sans', sans-serif;
-    margin:auto;
-    font-size: 1.8em;
+    margin:0px auto 30px;
+    font-size: 1.2em;
     display: grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1fr;
   grid-template-areas:
-    "chipvalue  blinds";
+    "blinds";
     justify-items: center;
     align-items: center;
 }
@@ -54,23 +61,19 @@ body {
 .blinds-container {
     grid-area:blinds;
 }
-    
-.chipvalue-container {
-    grid-area:chipvalue;
-}
 
-.table-container div table {
+.table-container table {
     letter-spacing: 3px;
     font-size:            1.2em;
     border: solid    3px  #000;
     border-spacing: 0px;
 }
 
-.table-container div table tr th {
+.table-container table tr th {
     padding: 10px;
 }
 
-.table-container div table tr:first-child{
+.table-container table tr:first-child{
     color:#fff;
     background-color:#A62026;
 }
@@ -87,7 +90,23 @@ tr:nth-child(even) {
     background-color:rgba(0,0,0,.1);
   }
 
+.points-button {
+	grid-area: points;
+	max-width:300px;
+	width:300px;
+	margin:20px auto;
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding:20px;
+	border-radius:20px;
+	font-family: 'PT Sans', sans-serif;
+}
 
+.points-button a {
+	text-decoration:none;
+	color:white;
+}
 
 .timer-container {
     grid-area:timer;
@@ -98,7 +117,7 @@ tr:nth-child(even) {
     margin:auto;
     display: grid;
   grid-template-columns: 20px 1fr 1fr 20px;
-  grid-template-rows: 1fr 5fr 2fr 2fr;
+  grid-template-rows: 1fr 5fr 2fr 1fr;
   grid-template-areas:
     ".  title   title  ."
     "progmin    time1   time2  progsec"

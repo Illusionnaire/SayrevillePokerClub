@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>Stevens Poker Club</title>
+        <title>Sayreville Poker Club</title>
         <link rel="stylesheet" href="main.css">
         <meta charset="UTF-8">
-        <meta name="description" content="Stevens Poker Club Resources and Tools">
-        <meta name="keywords" content="Stevens Poker Club, SPC, Poker, SPC Tools">
+        <meta name="description" content="Sayreville Poker Club Resources and Tools">
+        <meta name="keywords" content="Sayreville Poker Club, SPC, Poker, SPC Tools">
         <meta name="author" content="Marcin Wisniowski">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" media="screen and (max-width: 767px)" href="mobile.css"/>
@@ -43,122 +43,76 @@
     </div>
 
     <div class="table-container">
-        <div class="chipvalue-container">
-            <table class="chip-value-table">
-                <th>Chip Values</th>
-                <th></th>
-                <tr>
-                    <th>WHITE</th>
-                    <th>100</th>
-                </tr>
-                <tr>
-                    <th>RED</th>
-                    <th>200</th>
-                </tr>
-                <tr>
-                    <th>BLUE</th>
-                    <th>500</th>
-                </tr>
-                <tr>
-                    <th>GREEN</th>
-                    <th>1000</th>
-                </tr>
-                <tr>
-                    <th>BLACK</th>
-                    <th>5000</th>
-                </tr>
-                <tr>
-                    <th>Starting:</th>
-                    <th>22,800</th>
-                </tr>
+        <table class="blinds-table">
+			<tr>
+				<th>Time (minutes)</th>
+				<th>Small Blind</th>
+				<th>Big Blind</th>
+				<th>Ante</th>
+			</tr>
+			<tr id="blinds-table-start">
+				<th>15</th> 
+				<th>50</th>
+				<th>100</th>
+				<th>N/A</th>
+			</tr>
+			<tr>
+				<th>15</th>
+				<th>100</th>
+				<th>200</th>
+				<th>N/A</th>
+			</tr>
+			<tr>
+				<th>15</th>
+				<th>150</th>
+				<th>200</th>
+				<th>N/A</th>
+			</tr>
+			<tr>
+				<th>15</th>
+				<th>300</th>
+				<th>600</th>
+				<th>50</th>
+			</tr>
+			<tr>
+				<th>15</th>
+				<th>500</th>
+				<th>1000</th>
+				<th>100</th>
+			</tr>
+			<tr>
+				<th>15</th>
+				<th>800</th>
+				<th>1600</th>
+				<th>200</th>
+			</tr>
+			<tr>
+				<th>15</th>
+				<th>1500</th>
+				<th>3000</th>
+				<th>400</th>
+			</tr>
+			<tr>
+				<th>15</th>
+				<th>3000</th>
+				<th>6000</th>
+				<th>800</th>
+			</tr>
+		</table>
+	</div>
 
-            </table>
-        </div>
-
-        <div class="blinds-container">
-            <table class="blinds-table">
-                <tr>
-                    <th>Time (minutes)</th>
-                    <th>Small Blind</th>
-                    <th>Big Blind</th>
-                    <th>Ante</th>
-                </tr>
-                <tr id="blinds-table-start">
-                    <th>30</th> 
-                    <th>100</th>
-                    <th>200</th>
-                    <th>N/A</th>
-                </tr>
-                <tr>
-                    <th>30</th>
-                    <th>200</th>
-                    <th>400</th>
-                    <th>N/A</th>
-                </tr>
-                <tr>
-                    <th>30</th>
-                    <th>300</th>
-                    <th>600</th>
-                    <th>N/A</th>
-                </tr>
-                <tr>
-                    <th>25</th>
-                    <th>500</th>
-                    <th>1000</th>
-                    <th>100</th>
-                </tr>
-                <tr>
-                    <th>25</th>
-                    <th>700</th>
-                    <th>1400</th>
-                    <th>200</th>
-                </tr>
-                <tr>
-                    <th>25</th>
-                    <th>1000</th>
-                    <th>2000</th>
-                    <th>200</th>
-                </tr>
-                <tr>
-                    <th>20</th>
-                    <th>1300</th>
-                    <th>2600</th>
-                    <th>200</th>
-                </tr>
-                <tr>
-                    <th>20</th>
-                    <th>1600</th>
-                    <th>3200</th>
-                    <th>500</th>
-                </tr>
-                <tr>
-                    <th>20</th>
-                    <th>2000</th>
-                    <th>4000</th>
-                    <th>500</th>
-                </tr>
-                <tr>
-                    <th>20</th>
-                    <th>2500</th>
-                    <th>5000</th>
-                    <th>1000</th>
-                </tr>
-                <tr>
-                    <th>20</th>
-                    <th>5000</th>
-                    <th>10000</th>
-                    <th>Heads Up</th>
-                </tr>
-            </table>
-        </div>
-    </div>
+	<div class="points-button"> 
+		<a target="_blank" href="https://docs.google.com/spreadsheets/d/1wjr2YPUxc5TRDrG-3SrgZDN8E9qldguX804MNaPP58o/edit?usp=sharing"><span>Tournament Standings</span></a>
+	</div>
+	
+	<div class="formula-form"> 
+	
+	</div>
 
     <footer class="footer">
         <td>
-            <a target="_blank" href="https://discordapp.com/invite/VBzJjKs"><img src="images/discordicon.png" width=30px></a>
-            <a target="_blank" href="https://twitter.com/StevensPoker?lang=en"><img src="images/twittericon.png" width=30px></a>
-            <a target="_blank" href="https://www.instagram.com/stevenspokerclub/"><img src="images/instagram.png" width=30px></a>
-            <a href="https://ducklink.stevens.edu/organization/stevens-poker-club"><img src="images/ducklinkicon.png" width=100px></a>
+            <a target="_blank"><img src="images/discordicon.png" width=30px>
+			<p>Discord Channel</p></a>
         </td>
     </footer>
     <script src="main.js"></script>
